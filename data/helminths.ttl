@@ -1,0 +1,113 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nalt: <https://lod.nal.usda.gov/nalt/> .
+@prefix naltv: <https://lod.nal.usda.gov/naltv#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+nalt:199483 a skos:Concept,
+        naltv:Topic ;
+    dcterms:created "2013-05-21"^^xsd:date ;
+    dcterms:modified "2015-12-24"^^xsd:date ;
+    skos:broader nalt:40694 ;
+    skos:inScheme <https://lod.nal.usda.gov/nalt-helminths> ;
+    skos:prefLabel "blood flukes"@en .
+
+nalt:24140 a skos:Concept,
+        naltv:Organism ;
+    dcterms:created "2006-01-19"^^xsd:date ;
+    dcterms:modified "2012-11-30"^^xsd:date ;
+    skos:broader nalt:9354 ;
+    skos:inScheme <https://lod.nal.usda.gov/nalt-helminths> ;
+    skos:prefLabel "tapeworms"@en .
+
+nalt:26959 a skos:Concept,
+        naltv:Organism ;
+    dcterms:created "2006-01-19"^^xsd:date ;
+    dcterms:modified "2012-11-30"^^xsd:date ;
+    skos:broader nalt:40694 ;
+    skos:inScheme <https://lod.nal.usda.gov/nalt-helminths> ;
+    skos:prefLabel "liver flukes"@en .
+
+nalt:33269 a skos:Concept,
+        naltv:Organism ;
+    dcterms:created "2006-01-19"^^xsd:date ;
+    dcterms:modified "2015-02-12"^^xsd:date ;
+    skos:broader nalt:9354 ;
+    skos:inScheme <https://lod.nal.usda.gov/nalt-helminths> ;
+    skos:prefLabel "lungworms"@en .
+
+nalt:40695 a skos:Concept,
+        naltv:Topic ;
+    dcterms:created "2006-01-19"^^xsd:date ;
+    dcterms:modified "2012-11-30"^^xsd:date ;
+    skos:broader nalt:40694 ;
+    skos:inScheme <https://lod.nal.usda.gov/nalt-helminths> ;
+    skos:prefLabel "lung flukes"@en .
+
+nalt:44777 a skos:Concept,
+        naltv:Topic ;
+    dcterms:created "2006-01-19"^^xsd:date ;
+    dcterms:modified "2020-09-09"^^xsd:date ;
+    skos:broader nalt:9354 ;
+    skos:inScheme <https://lod.nal.usda.gov/nalt-helminths> ;
+    skos:prefLabel "heartworms"@en .
+
+nalt:8650 a skos:Concept,
+        naltv:Organism ;
+    dcterms:created "2006-01-19"^^xsd:date ;
+    dcterms:modified "2012-11-30"^^xsd:date ;
+    skos:broader nalt:9354 ;
+    skos:inScheme <https://lod.nal.usda.gov/nalt-helminths> ;
+    skos:prefLabel "hookworms"@en .
+
+nalt:9360 a skos:Concept,
+        naltv:Organism ;
+    dcterms:created "2006-01-19"^^xsd:date ;
+    dcterms:modified "2016-06-30"^^xsd:date ;
+    skos:altLabel "gastrointestinal parasitic nematodes"@en ;
+    skos:broader nalt:3945 ;
+    skos:inScheme <https://lod.nal.usda.gov/nalt-helminths> ;
+    skos:prefLabel "gastrointestinal nematodes"@en .
+
+nalt:3945 a skos:Concept,
+        naltv:Organism ;
+    dcterms:created "2006-01-19"^^xsd:date ;
+    dcterms:modified "2013-08-19"^^xsd:date ;
+    skos:altLabel "parasitic nematodes (animals)"@en ;
+    skos:broader nalt:9354 ;
+    skos:inScheme <https://lod.nal.usda.gov/nalt-helminths> ;
+    skos:narrower nalt:9360 ;
+    skos:prefLabel "animal parasitic nematodes"@en .
+
+nalt:40694 a skos:Concept,
+        naltv:Topic ;
+    dcterms:created "2006-01-19"^^xsd:date ;
+    dcterms:modified "2013-05-21"^^xsd:date ;
+    skos:broader nalt:9354 ;
+    skos:inScheme <https://lod.nal.usda.gov/nalt-helminths> ;
+    skos:narrower nalt:199483,
+        nalt:26959,
+        nalt:40695 ;
+    skos:prefLabel "flukes"@en .
+
+nalt:9354 a skos:Concept,
+        naltv:Organism ;
+    dcterms:created "2006-01-19"^^xsd:date ;
+    dcterms:modified "2020-09-30"^^xsd:date ;
+    skos:altLabel "parasitic helminths"@en,
+        "parasitic worms"@en ;
+    skos:inScheme <https://lod.nal.usda.gov/nalt-helminths> ;
+    skos:narrower nalt:24140,
+        nalt:33269,
+        nalt:3945,
+        nalt:40694,
+        nalt:44777,
+        nalt:8650 ;
+    skos:prefLabel "helminths"@en ;
+    skos:topConceptOf <https://lod.nal.usda.gov/nalt-helminths> .
+
+<https://lod.nal.usda.gov/nalt-helminths> a skos:ConceptScheme ;
+    rdfs:label "Helminths Concept Scheme"@en ;
+    skos:hasTopConcept nalt:9354 .
+
